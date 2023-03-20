@@ -2,7 +2,7 @@
 
 This project was created using: HTML, CSS3, JAVASCRIPT, JQUERY, AJAX, BOOTSTRAP.
 
-## :dart: About
+## 💻: About
 
 This is my second project at John Bryce Full Stack Web Development class.
 
