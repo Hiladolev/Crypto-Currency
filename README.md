@@ -1,12 +1,12 @@
 # CryptoCurrency
 
-This project was created using: HTML, CSS3, JAVASCRIPT, JQUERY, AJAX, REST API, BOOTSTRAP.
+This project was created using: HTML, CSS3, JAVASCRIPT, JQUERY, AJAX, BOOTSTRAP.
 
 ## :dart: About
 
-This is my second project for the John Bryce Full Stack Web Development class.
+This is my second project at John Bryce Full Stack Web Development class.
 
-Some of the features that can be found in CryptoSelect include: </br>
+Some of the features that can be found in this project : </br>
 Coin of interest selection by toggle switch. </br>
 Expandable information per coin. </br>
 
@@ -14,7 +14,7 @@ Expandable information per coin. </br>
 
 <ul>
     <li> New HTML5 tags</li>
-    <li>CSS3 media queries and advanced selectors</li>
+    <li>CSS3</li>
     <li>Dynamic page layouts</li>
     <li>Bootstrap & flex</li>
 </ul>
@@ -25,7 +25,7 @@ Expandable information per coin. </br>
     <li> Objects</li>
     <li>Callbacks, Promises, Async Await</li>
     <li>jQuery</li>
-    <li> Single Page Application foundations</li>
+    <li>Single Page Application foundations</li>
     <li>Events</li>
     <li>Ajax</li>
     <li>Documentation</li>
