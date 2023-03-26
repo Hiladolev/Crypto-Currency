@@ -7,30 +7,35 @@ $(function () {
       top: event.pageY,
     });
   });
-  //Show spinner every HTTP (Ajax) request
+
+  //Show spinner every Ajax request
   $(document).ajaxStart(function () {
     $("#spinner").show();
   });
-  //Hide spinner every HTTP (Ajax) request
+
+  //Hide spinner every Ajax request stop
   $(document).ajaxStop(function () {
     $("#spinner").hide();
   });
-  //Catch an error while fetching and displaying coins is rejected
-  renderCoins().catch((error) => {
-    console.error("Error while fetching and displaying coins", error);
-  });
-  //Close button inside the modal
+
+  //Displaying all 100 coins
+  renderCoins();
+
+  //Onclick event when user has clicked the "Close" button to cancel coins changes inside the modal
   $(".close").click(closeModal);
-  //Search button-onclick
+
+  //On click event that triggers handleSearchBar function for user search
   $(".navbar").on("click", "#search-btn", function () {
     handleSearchBar(displayCoins);
     $("#search-result").val("");
   });
-  //More info button-onclick
+
+  // On click event for showing more info when a "more-info" button is clicked
   $("#container").on("click", ".more-info", function (event) {
     getCoinDetailsFromClick(event);
   });
-  //Toggle button switches to on/off
+
+  //On click event when toggle clicked (on/off)
   $("#container").on("change", ".my-toggle", function () {
     handleToggleChange(this);
   });
@@ -42,25 +47,30 @@ $(function () {
       $(this).addClass("active");
     }
   });
-  // Remove the "active" class from other nav items
-  $(".nav-link").not(".active").removeClass("active");
+
   // Update the "active" class when the user clicks a nav item
   $(".nav-link").click(function () {
     $(".nav-link").removeClass("active");
     $(this).addClass("active");
   });
-  // clicking on the homepage
+
+  // Click event when user has clicked the homepage("Coins")
   $("#homePage").click(async function () {
     coinsModalArray = [];
     $("#container").empty();
     displayCoins = [];
-    renderCoins().catch((error) => {
-      console.error("Error while fetching and displaying coins", error);
-    });
+    renderCoins();
   });
-  //clicking on about page
+
+  //On click event when user has clicked the "About me" page
   $("#about").on("click", function () {
     $("#container").empty();
     aboutMe();
+  });
+
+  //On click event when user has clicked the "Live reports" page
+  $("#liveReports").on("click", function () {
+    $("#container").empty();
+    notFound();
   });
 });

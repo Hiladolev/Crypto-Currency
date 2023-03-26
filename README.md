@@ -2,7 +2,7 @@
 
 This project was created using: HTML, CSS3, JAVASCRIPT, JQUERY, AJAX, BOOTSTRAP.
 
-## 💻 About
+## :computer: About
 
 This is my second project at John Bryce Full Stack Web Development class.
 
@@ -10,7 +10,7 @@ Some of the features that can be found in this project : </br>
 Coin of interest selection by toggle switch. </br>
 Expandable information per coin. </br>
 
-## 🚀 Technologies
+## :rocket: Technologies
 
 <ul>
     <li> New HTML5 tags</li>

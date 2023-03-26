@@ -16,6 +16,7 @@ const fetchCoins = async () => {
       error: (error) => {
         notFound();
         reject(error);
+        console.error("Error while fetching and displaying coins", error);
       },
     });
   });
@@ -50,7 +51,7 @@ const renderSingleCoin = (singleCoin, index) => {
 </div>`;
   $("#container").append(data);
 };
-// Function that gets a specific foin data from the API and save in cache for 2 minutes
+// Function that gets a specific coin data from the API and save in cache for 2 minutes
 const fetchCoinsData = async (coinId) => {
   const cacheKey = `coin_${coinId}`;
   const cache = await caches.open("coinsCache");
@@ -129,11 +130,11 @@ const handleSearchBar = async (myCoins) => {
 };
 //Function that display page404 if search value doesn't exist, or can't fetch the API
 const notFound = () => {
-  $("#container").html(`<div class="w-100" >
-      <div class="d-flex align-items-center justify-content-center bg-black">
+  $("#container").html(`<div class="w-100">
+      <div class="d-flex align-items-center justify-content-center bg-black" id="notFound">
     <div class="text-center">
         <h1 class=" fw-bold text-danger ">404</h1>
-        <p class="fs-3 text-white""> <span class="text-danger">Opps!</span> Page not found.</p>
+        <p class="fs-3 text-white"> <span class="text-danger">Opps!</span> Page not found.</p>
         <p class="lead text-white">
             The page you’re looking for doesn’t exist.
           </p>
