@@ -1,6 +1,6 @@
 # CryptoCurrency
 
-This project was created using: HTML, CSS3, JAVASCRIPT, JQUERY, AJAX, BOOTSTRAP.
+This project was created using: HTML, CSS, JAVASCRIPT, JQUERY, AJAX, BOOTSTRAP.
 
 ## :computer: About
 
