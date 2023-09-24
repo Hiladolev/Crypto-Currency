@@ -14,7 +14,6 @@ const fetchCoins = async () => {
         resolve(data);
       },
       error: (error) => {
-        notFound();
         reject(error);
         console.error("Error while fetching and displaying coins", error);
       },
@@ -124,9 +123,6 @@ const handleSearchBar = async (myCoins) => {
       renderSingleCoin(item, index);
     }
   });
-  // if (count === 1) {
-  //   notFound();
-  // }
 };
 //Function that display page404 if search value doesn't exist, or can't fetch the API
 const notFound = () => {
