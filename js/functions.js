@@ -124,9 +124,9 @@ const handleSearchBar = async (myCoins) => {
       renderSingleCoin(item, index);
     }
   });
-  if (count === 1) {
-    notFound();
-  }
+  // if (count === 1) {
+  //   notFound();
+  // }
 };
 //Function that display page404 if search value doesn't exist, or can't fetch the API
 const notFound = () => {
