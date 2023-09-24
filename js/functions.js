@@ -213,7 +213,7 @@ const aboutMe = () => {
       <div class="card-body text-center">
       <h4 class="card-title font-weight-bold">HAPPINESS IS..</h4>
       <p>When your code runs without error.</p>
-      <a href="https://github.com/Hiladolev" class="btn btn-primary">My Github</a>
+      <a href="https://github.com/Hiladolev" target="_blank" class="btn btn-primary">My Github</a>
     </div>
   </div>`);
 };
