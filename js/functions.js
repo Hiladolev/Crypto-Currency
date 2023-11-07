@@ -55,7 +55,7 @@ const fetchCoinsData = async (coinId) => {
   const cacheKey = `coin_${coinId}`;
   const cache = await caches.open("coinsCache");
   const cachedResponse = await cache.match(cacheKey);
-  //If there there there is a coin info in the cache, change the response into json  if (cachedResponse) {
+  //If there there there is a coin info in the cache, change the response into json
   if (cachedResponse) {
     const cachedData = await cachedResponse.json();
     return Promise.resolve(cachedData);
