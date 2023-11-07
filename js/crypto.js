@@ -67,10 +67,4 @@ $(function () {
     $("#container").empty();
     aboutMe();
   });
-
-  //On click event when user has clicked the "Live reports" page
-  $("#liveReports").on("click", function () {
-    $("#container").empty();
-    notFound();
-  });
 });
